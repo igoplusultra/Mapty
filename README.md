@@ -17,7 +17,7 @@ The Fitness Tracking App is a web application designed to help users track their
 
 Check out a demonstration of the app in action:
 
-[![Fitness Tracking App Demo] https://github.com/user-attachments/assets/9ac04954-265c-4e30-8b64-f34ee18b334a
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/989320848?autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Live Site
 
