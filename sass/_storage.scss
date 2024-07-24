@@ -1,0 +1,91 @@
+@use "../sass/variables" as var;
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes l6 {
+  100% {
+    inset: 0;
+  }
+}
+
+@keyframes pushReleaseFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(100px);
+  }
+}
+
+.storage {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  animation: pushReleaseFromTop 1.5s ease-in-out;
+
+  &__spinner {
+    width: 7.5rem;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var.$color-primary-green;
+    --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: l3 1s infinite linear;
+  }
+
+  /* HTML: <div class="loader"></div> */
+  &__progress {
+    width: 85%;
+    height: 22px;
+    border-radius: 20px;
+    color: var.$color-primary-green;
+    border: 2px solid;
+    position: relative;
+  }
+  &__progress::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l6 3s infinite;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    gap: 1.2rem;
+  }
+
+  &__header {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  &__wait {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var.$color-primary-green;
+  }
+
+  img {
+    width: 4rem;
+  }
+}

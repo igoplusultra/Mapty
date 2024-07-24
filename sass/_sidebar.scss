@@ -1,0 +1,33 @@
+@use "./variables" as var;
+.sidebar {
+  grid-row: 1 / -1;
+  background-color: var.$color-primary-grey;
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+
+  @keyframes skewInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%) skewX(-40deg);
+    }
+    70% {
+      transform: skewX(-30deg);
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    animation: skewInLeft 1.2s ease-in-out;
+    &__name {
+      color: var.$color-primary-green;
+    }
+    &__img {
+      max-width: 100%;
+    }
+  }
+}

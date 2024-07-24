@@ -1,0 +1,113 @@
+@use "../sass/variables" as var;
+
+@keyframes blurInTop {
+  from {
+    transform: translateY(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes coolHorizontalShake {
+  3%,
+  21%,
+  39%,
+  57%,
+  74%,
+  92% {
+    transform: translateX(5px);
+  }
+  6%,
+  24%,
+  42%,
+  60%,
+  77%,
+  95% {
+    transform: translateX(3px);
+  }
+  9%,
+  27%,
+  45%,
+  63%,
+  80%,
+  98% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(25%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes blurOutTop {
+  85%,
+  to {
+    filter: blur(20px);
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.move {
+  animation: moveDown 3s ease-in-out infinite;
+}
+
+.blurOutTop {
+  animation: blurOutTop 1.2s ease-in-out infinite;
+}
+
+.coolHorizontalShake {
+  animation: coolHorizontalShake 1.2s ease infinite;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2.4rem;
+  height: 13rem;
+  background-color: var.$color-primary-green;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+
+  animation: blurInTop 1.2s ease-in-out;
+
+  .workout--activity {
+    color: var.$color-primary-grey;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    input {
+      cursor: not-allowed;
+    }
+
+    input,
+    select {
+      padding: 0.8rem 0.6rem;
+      width: 35%;
+      border-radius: 0.64rem;
+      border: 1px solid var.$color-primary-grey;
+
+      &::placeholder {
+        font-size: 1.4rem;
+        transform: translateX(5%);
+        font-weight: 600;
+      }
+    }
+  }
+}

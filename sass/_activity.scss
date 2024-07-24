@@ -1,0 +1,127 @@
+@use "../sass/variables" as var;
+
+@keyframes translateUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.user__activities {
+  width: 100%;
+  height: 77vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.activity {
+  animation: translateUpDown 2s infinite;
+  width: 100%;
+  height: 20%;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12;
+  border-radius: 0.8rem;
+  background-color: var.$color-primary-grey;
+
+  &__config {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+
+    &--date {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+    display: flex;
+    gap: 1.6rem;
+    padding: 1.8rem;
+    font-weight: 600;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 0.24rem;
+    font-size: 1.2rem;
+    color: #000000a4;
+    .number {
+      font-size: 1.8rem;
+      color: #000;
+    }
+    img {
+      width: 2.4rem;
+    }
+  }
+}
+
+.activity__config--running {
+  color: var.$color-primary-running;
+}
+
+.activity__config--cycling {
+  color: var.$color-primary-cycling;
+}
+
+.activity__running {
+  box-shadow: 0 5px 15px 0px rgba(var.$color-primary-running, 0.6);
+}
+
+.activity__cycling {
+  box-shadow: 0 5px 15px 0px rgba(var.$color-primary-cycling, 0.6);
+}
+
+.activity__btns__running {
+  color: var.$color-primary-running;
+
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      var.$color-primary-running,
+      var.$color-primary-running
+    );
+  }
+}
+
+.activity__btns__cycling {
+  color: var.$color-primary-cycling;
+
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      var.$color-primary-cycling,
+      var.$color-primary-cycling
+    );
+  }
+}
+
+// .activity__btn__cycling {
+//   color: var.$color-primary-cycling;
+
+//   &:hover {
+//     background: linear-gradient(
+//       135deg,
+//       var.$color-primary-cycling,
+//       var.$color-primary-cycling
+//     );
+//   }
+// }

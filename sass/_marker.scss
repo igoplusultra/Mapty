@@ -1,0 +1,102 @@
+@use "../sass/variables" as var;
+
+.homeMarker {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var.$color-primary-green;
+  box-shadow: 0 0 0 0 #0000;
+  animation: l2 1.5s infinite linear;
+  position: absolute;
+  z-index: 100;
+}
+.homeMarker:before,
+.homeMarker:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #0004;
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+.homeMarker:after {
+  animation-delay: -1s;
+}
+@keyframes l2 {
+  100% {
+    box-shadow: 0 0 0 40px #0000;
+  }
+}
+
+@keyframes l9 {
+  33% {
+    background-position: 0% 33%, 100% 33%, 200% 33%;
+  }
+  66% {
+    background-position: -100% 66%, 0% 66%, 100% 66%;
+  }
+  100% {
+    background-position: 0% 100%, 100% 100%, 200% 100%;
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+
+.clickedMarker__running {
+  --r1: 154%;
+  --r2: 68.5%;
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+      var(--r1) var(--r2) at top,
+      #0000 79.5%,
+      var.$color-primary-running 80%
+    ),
+    radial-gradient(
+      var(--r1) var(--r2) at bottom,
+      var.$color-primary-running 79.5%,
+      #0000 80%
+    ),
+    radial-gradient(
+      var(--r1) var(--r2) at top,
+      #0000 79.5%,
+      var.$color-primary-running 80%
+    ),
+    #ccc;
+  background-size: 50.5% 220%;
+  background-position: -100% 0%, 0% 0%, 100% 0%;
+  background-repeat: no-repeat;
+  animation: l9 1.5s infinite linear;
+}
+
+.clickedMarker__cycling {
+  --r1: 154%;
+  --r2: 68.5%;
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+      var(--r1) var(--r2) at top,
+      #0000 79.5%,
+      var.$color-primary-cycling 80%
+    ),
+    radial-gradient(
+      var(--r1) var(--r2) at bottom,
+      var.$color-primary-cycling 79.5%,
+      #0000 80%
+    ),
+    radial-gradient(
+      var(--r1) var(--r2) at top,
+      #0000 79.5%,
+      var.$color-primary-cycling 80%
+    ),
+    #ccc;
+  background-size: 50.5% 220%;
+  background-position: -100% 0%, 0% 0%, 100% 0%;
+  background-repeat: no-repeat;
+  animation: l9 1.5s infinite linear;
+}
+
+/* HTML: <div class="loader"></div> */

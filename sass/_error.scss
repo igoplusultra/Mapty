@@ -1,0 +1,36 @@
+@use "../sass/variables" as var;
+
+@keyframes shockInTop {
+  from {
+    transform: matrix(1, 0, 0, 1, 0, -300);
+  }
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, 45);
+  }
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.error {
+  background-color: var.$color-error;
+  width: 80%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  animation: shockInTop 3.5s ease-out;
+
+  &__box {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    & img {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+}
