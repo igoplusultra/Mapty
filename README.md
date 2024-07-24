@@ -13,6 +13,16 @@ The Fitness Tracking App is a web application designed to help users track their
 - **Local Storage**: Save and retrieve workout data using local storage.
 - **Route Visualization**: Display routes on the map based on workout data.
 
+## Demo
+
+Check out a demonstration of the app in action:
+
+[![Fitness Tracking App Demo](https://img.youtube.com/vi/989320848/maxresdefault.jpg)](https://vimeo.com/989320848)
+
+## Live Site
+
+Explore the live application here: [Fitness Tracking App](https://mapty-v02.netlify.app/)
+
 ## Getting Started
 
 ### Prerequisites
@@ -28,4 +38,3 @@ The Fitness Tracking App is a web application designed to help users track their
    ```bash
    git clone <repository-url>
    cd <repository-directory>
-   ```
