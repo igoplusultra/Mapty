@@ -34,8 +34,6 @@ Explore the live application here: [Fitness Tracking App](https://mapty-v02.netl
 
 ### Installation
 
-1. **Clone the Repository**
-
    ```bash
    git clone https://github.com/igoplusultra/Mapty.git
    cd Mapty
