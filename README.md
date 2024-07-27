@@ -22,7 +22,7 @@ Check out a demonstration of the app in action:
 
 ## Live Site
 
-Explore the live application here: [Fitness Tracking App](https://mapty-v02.netlify.app/)
+Explore the live application here: [Fitness Tracking App](https://mapty-v3.netlify.app/)
 
 ## Getting Started
 
