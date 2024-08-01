@@ -1,8 +1,15 @@
+<img src="https://github.com/user-attachments/assets/a6ddec08-9bf3-4431-9db2-90929f94af78" width="200%">
+
+
 # Fitness Tracking App
+
+<br>
 
 ## Overview
 
 The Fitness Tracking App is a web application designed to help users track their running and cycling workouts on a map. It leverages Mapbox for interactive map features and Google Maps Street View for location images. Users can log their workouts, view their activities on the map, and visualize their routes with detailed metrics.
+
+<br>
 
 ## Features
 
@@ -13,11 +20,17 @@ The Fitness Tracking App is a web application designed to help users track their
 - **Local Storage**: Save and retrieve workout data using local storage.
 - **Route Visualization**: Display routes on the map based on workout data.
 
+<br>
+
 ## Demo
 
 Check out a demonstration of the app in action:
+<p align="center">
+   <img align="center" src="https://github.com/user-attachments/assets/622535b7-bfa4-42cd-9174-989512ac3208" width="680" alt="mapty">
+   <img src="https://github.com/user-attachments/assets/dc4f9431-5140-4e7b-822c-c58c4d79b58b">
+</p>
 
-<img src="https://github.com/user-attachments/assets/622535b7-bfa4-42cd-9174-989512ac3208" style="width: 680px; border-radius: 15px;" alt="mapty">
+<br>
 
 
 ## Live Site
