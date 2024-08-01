@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/a6ddec08-9bf3-4431-9db2-90929f94af78" width="200%">
+<img src="https://github.com/user-attachments/assets/670858f7-3c7d-4f5c-9a4b-b1b09702f8d2" width="200%">
 
 
 # Fitness Tracking App
