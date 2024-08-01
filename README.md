@@ -38,5 +38,4 @@ Explore the live application here: [Fitness Tracking App](https://mapty-v3.netli
    git clone https://github.com/igoplusultra/Mapty.git
    cd Mapty
    sudo npm install
-   sudo npm run start
    
